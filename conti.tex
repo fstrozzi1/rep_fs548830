@@ -1,0 +1,386 @@
+\documentclass{article}
+
+
+\begin{document}
+\section{PLAN}
+\begin{enumerate}
+\item $\mathcal{L}_{EFT}$ semileptonic.
+\item Matching UV.
+\item $\mathcal{A}=f(C_i)$.
+\item $\mathcal{A}=f(g,M)$
+\end{enumerate}
+\section{EFT}
+\subsection{$\mathcal{L}_{EFT}$ semileptonic}
+Set of relevant 2q2l operators hopefully complete:
+\[ % LH operators
+\mathcal{O}_S= q_L^\dagger \overline{\sigma}^\mu q_L \ l_L^\dagger \overline{\sigma}_\mu l_L \  \quad,\mathcal{O}_T=q_L^\dagger \overline{\sigma}^\mu  \sigma_a q_L \ l_L^\dagger \overline{\sigma}_\mu \sigma^a l_L
+\]
+\[ % Non SM operators
+\mathcal{O}^{u/d}_R = q_R^\dagger \sigma^\mu q_R \ e_R^\dagger \sigma_\mu e_R \quad, \mathcal{O}_{LQ}^{u/d}= q_L^\dagger \overline{\sigma}^\mu l_L \ e_R^\dagger \sigma_\mu q_R
+\]
+\[ % LR operators 
+\mathcal{O}_{LR1}= q_L^\dagger \overline{\sigma}^\mu q_L \ e_R^\dagger \sigma_\mu e_R \quad, \mathcal{O}_{LR2}^{u/d}= q_R^\dagger \sigma^\mu q_R \ l_L^\dagger \overline{\sigma}_\mu l_L 
+\]
+
+\subsection{$\mathcal{L}_{EFT}$ proton decay}
+I wouldn't concern too much about proton decay because it would be anyway flavour suppressed but the relevant operators are : $ d_R^\dagger u_R^c \ u_R^\dagger e_R^c \quad  d_R^\dagger u_R^c \ q_L^\dagger l_L^c $ $ d_R^\dagger d_R^c \ d_R^\dagger e_R $
+\subsection{$\mathcal{L}_{EFT} \ \Delta F = 2$ }
+To catalogate the operators which contribute to meson mixing we just consider that the operators are alrady present in SM and are obtained contracting the neutral quark currents in all the possible ways. Since the meson mixing concerns just neutral mesons without flipping of the third component of $SU(2)_L$ i.e. without including the triplet current $q^\dagger_L \overline{\sigma}^\mu  \sigma_a q_L$. Plus with 4 quark we have two different ways to contract colour index ($SU(3)_c$ is not that easy to Fierz as $SU(2)_L$) so we neglect the colour index in the case the single current is an $SU(3)_c$ singlet.
+\[
+\mathcal{O}_{4q} = q_L^\dagger \overline{\sigma}^\mu q_L \ q_L^\dagger \overline{\sigma}_\mu q_L \quad , \mathcal{O'}_{4q} = {q_L^\alpha}^\dagger \overline{\sigma}^\mu {q_L}_\beta \ {q_L^\beta}^\dagger \overline{\sigma}_\mu {q_L}_\alpha
+\]
+\[
+\mathcal{O}_{2q2u/d} = q_R^\dagger \sigma^\mu q_R \ q_L^\dagger \overline{\sigma}_\mu q_L \quad , \mathcal{O'}_{2q2u/d} = {q_R^\alpha}^\dagger \sigma^\mu {q_R}_\beta \ {q_L^\beta}^\dagger \overline{\sigma}_\mu {q_L}_\alpha
+\]
+\[
+\mathcal{O}_{4u/d} = q_R^\dagger \sigma^\mu q_R \ q_R^\dagger {\sigma}_\mu q_R \quad , \mathcal{O'}_{4u/d} = {q_R^\alpha}^\dagger \sigma^\mu {q_R}_\beta \ {q_R^\beta}^\dagger {\sigma}_\mu {q_R}_\alpha
+\]
+\[
+\mathcal{O}_{2d2u} = d_R^\dagger \sigma^\mu d_R \ u_R^\dagger \sigma_\mu u_R \quad , \mathcal{O'}_{2d2u} = {d_R^\alpha}^\dagger \sigma^\mu {d_R}_\beta \ {u_R^\beta}^\dagger \sigma_\mu {u_R}_\alpha
+\]
+\section{Matching UV}
+\subsection{W' B'}
+\[
+\mathcal{L}_{UV} \supset \ \lambda^l_W g_{W'}\overline{l_L} \gamma^\mu \sigma_a l_L  W_\mu^a   \ + \ \lambda_W^q g_{W'}\overline{q_L} \gamma^\mu \sigma_a q_L  W_\mu^a   \ +
+\]
+\[
+  \lambda^l_B g_{B'} \overline{l_L} \gamma^\mu  l_L  B_\mu  \ + \ \lambda^q_B g_{B'} \overline{q_L} \gamma^\mu  q_L  B_\mu + \lambda^e_B g_{B'} \overline{e_R} \gamma^\mu  e_R  B_\mu  \ + \ \lambda^u_B g_{B'} \overline{u_R} \gamma^\mu  u_R  B_\mu \ + \ \lambda^d_B g_{B'} \overline{d_R} \gamma^\mu  d_R  B_\mu + 
+\]
+\[ 
+\frac{M^2_B}{2} B_\mu B^\mu + \frac{M^2_W}{2} W^{a}_\mu W^\mu_a - \frac{1}{4}(W^{a}_{\mu \nu} W^{\mu\nu}_a + B_{\mu \nu} B^{\mu \nu})
+\]
+%Fine Lagrangiana
+\[
+\frac{\delta \mathcal{L}}{\delta B_\mu} = 0 = \frac{M_B^2}{2} B^\mu + \lambda^l_B g_{B'}\overline{l_L} \gamma^\mu  l_L   \ + \ \lambda^q_B g_{B'} \overline{q_L} \gamma^\mu  q_L \ + \ 
+\]
+\[
+\lambda^e_B g_{B'} \overline{e_R} \gamma^\mu  e_R \ + \ \lambda^u_B g_{B'} \overline{u_R} \gamma^\mu  u_R \ + \ \lambda^d_B g_{B'} \overline{d_R} \gamma^\mu  d_R\rightarrow
+\]
+\[
+ B^\mu = -\frac{2g_{B'}}{M^2_{B'}} \big[ \lambda^l_B  \overline{l_L} \gamma^\mu  l_L   \ + \ \lambda^q_B  \overline{q_L} \gamma^\mu  q_L \ + \ \lambda^e_B  \overline{e_R} \gamma^\mu  e_R \ + \ \lambda^u_B  \overline{u_R} \gamma^\mu  u_R \ + \ \lambda^d_B  \overline{d_R} \gamma^\mu  d_R \big].
+\]
+\[
+\frac{\delta \mathcal{L}}{\delta W^a_\mu} = 0 = \frac{M_W^2}{2} W_a^\mu + \lambda^l_W g_{W'} \overline{l_L} \gamma^\mu \sigma_a l_L   \ + \ \lambda^q_W g_{W'}\overline{q_L} \gamma^\mu \sigma_a q_L \rightarrow
+\]
+\[
+ W_a^\mu = -\frac{2 g_{W'}}{M^2_{W'}} \big[ \lambda^l_W \overline{l_L} \gamma^\mu \sigma_a l_L   \ + \ \lambda^q_W \overline{q_L} \gamma^\mu \sigma_a q_L \big].
+\]
+%Fine edm
+\[
+\mathcal{L}_{EFT} \supset -2G_{W'} \big[ l_L^\dagger \lambda^l \overline{\sigma}^\mu \sigma_a l_L \ l_L^\dagger \lambda^l \overline{\sigma}_\mu \sigma^a l_L \ + \ q_L^\dagger \lambda^q \overline{\sigma}^\mu \sigma_a q_L \ q_L^\dagger \lambda^q \overline{\sigma}_\mu \sigma^a q_L + \ 2 q_L^\dagger \lambda^q \overline{\sigma}^\mu \sigma_a q_L \ l_L^\dagger \lambda^l \overline{\sigma}_\mu \sigma^a l_L \big]
+\]
+\[
+-2G_{B'} \big[ \big( \sum_{\psi} \overline{\psi} \lambda^\psi \sigma_\mu \psi \big) \ \big( \sum_{\chi} \overline{\chi} \lambda^\chi \sigma_\mu \chi \big) \big]
+\]
+where
+\[
+G_W\equiv \frac{g_{W'}^2}{M_{W'}^2} \quad, G_B\equiv \frac{g_{B'}^2}{M_{B'}^2} .
+\]
+% MATCHING
+
+So we generate:
+\[
+C_S\equiv  2 G_{B'} \lambda_{B'}^q \lambda_{B'}^l \quad C_T \equiv 2G_{W'} \lambda_{W'}^q \lambda_{W'}^l \quad C_{LR1} \equiv 2 G_{B'} \lambda_{B'}^q \lambda_{B'}^e \quad C_{LR2}^{u/d} 2 G_{B'} \lambda_{B'}^{u/d} \lambda_{B'}^l
+\]
+
+
+\subsection{$U_1 \sim (3,1)_{2/3}$}
+\[
+\mathcal{L}_{UV} \supset -\frac{1}{2} U_{1\mu \nu}^\dagger U^{\mu \nu}_1 \ + \ M_{U_1}^2 U_{1\mu}U_1^\mu  \ +
+g_U U_{1\mu} \big[ q_L^\dagger \beta^L_{U_1} \overline{\sigma}^\mu l_L \ +  \ d_R^\dagger \beta^R_{U_1} \sigma^\mu e_R \big] \ + \ h.c. 
+\]
+% fine lagrangiana
+\[
+\frac{\delta \mathcal{L}}{\delta U_{1\mu}^\dagger} = 0 = M_{U_1}^2 U_1^\mu \ +\ g_{U_1} \big[ l_L^\dagger \beta^{*L}_{U_1} \overline{\sigma}^\mu q_L \ +  \ e_R^\dagger \beta^{*R}_{U_1} \sigma^\mu d_R\big] \rightarrow
+\]
+\[
+U^\mu_1 = - \frac{g_{U_1}}{M^2_{U_1}} \big[ l_L^\dagger \beta^{*L}_{U_1} \overline{\sigma}^\mu q_L \ +  \ e_R^\dagger \beta^{*R}_{U_1} \sigma^\mu d_R \big] \quad, U^{\mu \dagger}_1 = -\frac{g_{U_1}}{M^2_{U_1}} \big[ q_L^\dagger \beta^L_{U_1} \overline{\sigma}^\mu l_L \ +  \ d_R^\dagger \beta^R_{U_1} \sigma^\mu e_R \big] 
+\]
+% fine edm
+\[
+\mathcal{L}_{EFT} \supset -G_{U_1}\big[ l_L^\dagger \beta^L_{U_1} \overline{\sigma}^\mu q_L \ q_L^\dagger \beta^{*L}_{U_1} \overline{\sigma}_\mu l_L \ +\  2l_L^\dagger \beta^L_{U_1} \overline{\sigma}^\mu q_L  \ d_R^\dagger \beta^{*R}_{U_1} \sigma_\mu e_R \  + \ e_R^\dagger \beta^R_{U_1} \sigma^\mu d_R \  d_R^\dagger \beta^{*R}_{U_1} \sigma^\mu e_R + h.c \big]
+\]
+Where, $G_{U_1} \equiv \frac{g^2_{U_1}}{M^2_{U_1}}$, now we easily recognize $\mathcal{O}^d_{LQ}$; also using that \\ $\sigma^\mu_{\alpha\dot{\alpha}} \sigma_{\mu\beta \dot{\beta}}=2 \varepsilon_{\dot{\alpha} \dot{\beta}} \varepsilon_{\alpha \beta}=- \sigma^\mu_{\alpha\dot{\beta}} \sigma_{\mu\beta \dot{\alpha}}$.\\
+Plus for what concern the $SU(2)_L$ structure we have to fix just the first term, since for the others the singlet is realized trivially.
+\[
+\sigma^i_{ad} {\sigma_{cb}}_i = 2 \delta_{ab} \delta_{cd}- \delta_{ad}  \delta_{bc} \rightarrow \delta_{ab}\delta_{cd} = \frac{\sigma^i_{ad} {\sigma_{cb}}_i + \delta_{ad} \delta_{cb}}{2}
+\]
+
+\[
+\mathcal{L}_{EFT} \supset G_{U_1}\big[\frac{\beta_{U_1}^L \beta_{U_1}^{*L}}{2}(\mathcal{O}_{S} + \mathcal{O}_{T}) + \beta_{U_1}^R \beta_{U_1}^{*R} \mathcal{O}^d_{R} - 2 \beta_{U_1}^R \beta_{U_1}^{*L} \mathcal{O}^d_{LQ} + h.c.]
+\]
+Generaing so:
+\[
+C_S = C_T \equiv \frac{G_{U_1}}{2} \beta_{U_1}^{L*} \beta_{U_1}^L \quad  C_R^d \equiv G_{U_1} \beta_{U_1}^{R*} \beta_{U_1}^R  \quad C_{LQ} \equiv G_{U_1} \beta_{U_1}^{R*} \beta_{U_1}^L 
+\]
+and nothing else!!!
+\subsection{$U_3 \sim (3,3)_{2/3}$}
+\[
+\mathcal{L}_{UV} \supset -\frac{1}{2} U^{\dagger a}_{3\mu \nu} U_{3a}^{\mu \nu} + M^2_{U_3} U_{3a}^{\dagger\mu} U^a_{3 \mu} + g_{U_3}\big[ U_{3 \mu}^a q_L^\dagger \beta_{U_3} \overline{\sigma}^\mu \sigma_a l_L + h.c \big] 
+\]
+\[
+\frac{\delta \mathcal{L}}{\delta U_{3 \mu}^a} =0 = M_{U_3}^2 U_{3a}^{mu} +g_{U_3} l_L^\dagger \beta^*_{U_3} \overline{\sigma}^\mu \sigma_a q_L \rightarrow
+\]
+\[
+U^\mu_{3a} = -\frac{g_{U_3}}{M^2_{U_3}} l_L^\dagger \beta^*_{U_3} \overline{\sigma}^\mu \sigma_a q_L 
+\]
+\[
+\mathcal{L}_{EFT} \supset -G_{U_3} \big[ q_L^\dagger \beta_{U_3} \overline{\sigma}^\mu \sigma_a l_L \ l_L^\dagger \beta^*_{U_3} \overline{\sigma}_\mu \sigma^a q_L \ + h.c \big]
+\]
+Using the same identity I find a minus sign, but this time i have to make also the $SU(2)_L$ structure according with the basis defined. To do this I have to write tensors which combine the first and the fourth field (and second with third) starting from first with second and third with fourth, trough Fierz's identity i find:
+\[
+\sigma^a_{ij} \sigma_{a \ kl} = \frac{1}{2} (3\delta_{il} \delta_{jk} - \sigma^a_{il} \sigma_{a \ kj}) \rightarrow
+\]
+\[
+\mathcal{L}_{EFT} \supset \frac{G_{U_3}}{2} \beta_{U_3} \beta_{U_3}^*[3 \mathcal{O}_S - \mathcal{O}_T]
+\]
+which in term of Wilson coefficients:
+\[
+C_S = -3 C_T \equiv \frac{3 G_{U_3}}{2 M^2_{U_3}} \beta_{U_3} \beta_{U_3}^*
+\]
+
+\subsection{$S_1 \sim (3^*,1)_{1/3}$}
+\[
+\mathcal{L}_{UV} \supset (D_\mu S_1)^\dagger D^\mu S_1 + M^2 S_1^\dagger S_1 +
+\]
+\[
++g_{S_1} S_1^i \big[ \overline{q^c_{L i}} \beta_{S_1} \varepsilon l_L + \overline{q^j_L} \lambda_{S_1} \varepsilon {q^{c}_L}^k \varepsilon_{ijk} \big] +h.c.
+\]
+where $\varepsilon$ act on $SU(2)_L$ and $\varepsilon_{abc} $ on $SU(3)_c$.
+\[
+\frac{\delta \mathcal{L}_{UV}}{\delta S_1^{i \dagger}} =0= M^2_{S_1} S_{1a} + g_{S_1}\big[ \overline{l_L} \beta^*_{S_1} \varepsilon q^c_{L i} + \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}\big] \rightarrow
+\]  
+\[
+S_{1i} = - \frac{g_{S_1}}{M^2_{S_1}} \big[ \overline{l_L} \beta^*_{S_1} \varepsilon q^c_{L i} + \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}\big] 
+\]
+
+\[
+\mathcal{L}_{EFT} \supset -G_{S_1} \big[  \overline{l_L} \beta^*_{S_1} \varepsilon {q^c}^i_{L} \ \overline{q^c_{L i}} \beta_{S_1} \varepsilon l_L \ + \  \overline{l_L} \beta^*_{S_1} \varepsilon {q^c}^i_{L} \ \overline{q^j_L} \lambda_{S_1} \varepsilon {q^{c}_L}^k \varepsilon_{ijk} \ + 
+\]
+\[
+\overline{q^c_L}^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}  \overline{q^c}^i_{L} \beta_{S_1} \varepsilon l_L \ + \ \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}  \overline{q^l_L} \lambda_{S_1} \varepsilon {q^c_L}_m \varepsilon^{ilm} \big]
+\]
+Then, (see appendix)
+\[
+\overline{a^c} \varepsilon b \  \overline{c} \varepsilon d^c =\frac{1}{4}\big[ a^\dagger \overline{\sigma}^ \mu b \ c^\dagger \overline{\sigma}_\mu d \ - \ a^\dagger \overline{\sigma}^\mu  \sigma_a b \ c^\dagger \overline{\sigma}_\mu  \sigma^a d \big] \rightarrow
+\]
+
+\[
+\mathcal{L}_{EFT} \supset -G_{S_1} \big[ \frac{1}{4} \beta_{S_1} \beta_{S_1}^* \mathcal{O_S} - \frac{1}{4} \beta_{S_1} \beta_{S_1}^* \mathcal{O}_T + \  \overline{l_L} \beta^*_{S_1} \varepsilon {q^c}^i_{L} \ \overline{q^j_L} \lambda_{S_1} \varepsilon {q^{c}_L}^k \varepsilon_{ijk} \ + 
+\]
+\[
+\overline{q^c_L}^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk} \  \overline{q^c}^i_{L} \beta_{S_1} \varepsilon l_L \ + \ \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk} \ \overline{q_L}_l \lambda_{S_1} \varepsilon {q^c_L}_m \varepsilon^{ilm} \big]
+\]
+Terms that give problems to $\Delta F=2$ and proton decay can be swtiched off setting the flavour matrix $\lambda_{S_1}=0$. Last term can be written in term of known $\mathcal{O}_{1-2}$ using $\varepsilon_{ijk} \varepsilon^{ilm} = \delta_j^l \delta_k^m -\delta_j^m \delta_k^l $.
+In terms of Wilson's semileptonic coefficients:
+\[
+C_S = - C_T \equiv - G_{S_1} \beta^*_{S_1} \beta_{S_1} 
+\]
+\subsection{$S_3 \sim (3^*, 3)_{1/3}$}
+\[
+\mathcal{L}_{UV} \supset (D_\mu S_{3a})^\dagger D^\mu S_3^a + M^2 S_{3a}^\dagger S_3^a +
+\]
+\[
++g_{S_3} S_3^{ia}(\overline{q_L}^j \lambda_{S_3} \varepsilon \sigma_a {q^c_L}^k \varepsilon_{ijk} + \overline{q_L^c}_i \beta_{S_3} \varepsilon \sigma_a l_L) +h.c.
+\]
+\[
+\frac{\delta \mathcal{L}_{UV}}{\delta {S_{3}^{ia}}^\dagger} =0 = M^2_{S_3} {S_3}_{ia} + g_{S_3} \big[ \overline{q_L^c}_j \lambda^*_{S_3} \varepsilon \sigma_a {q_L}_k \varepsilon^{ijk} + \overline{l_L} \beta_{S_3}^* \varepsilon \sigma_a {q^c_L}^i \big] \rightarrow
+\]
+\[
+{S_3}_{ia} = -\frac{g_{S_3}}{M^2_{S_3}} \big[ \overline{q_L^c}_j \lambda^*_{S_3} \varepsilon \sigma_a {q_L}_k \varepsilon^{ijk} + \overline{l_L} \beta_{S_3}^* \varepsilon \sigma_a {q^c_L}^i \big] 
+\]
+
+\[
+\mathcal{L}_{EFT} \supset -G_{S_3} \big[ \overline{q_L^c}_i \beta_{S_3} \varepsilon \sigma_a l_L \ \overline{l_L} \beta_{S_3}^* \varepsilon \sigma_a {q^c_L}^i \ + \ \overline{q_L^c}_i \beta_{S_3} \varepsilon \sigma_a l_L \ \overline{q_L^c}_j \lambda^*_{S_3} \varepsilon \sigma_a {q_L}_k \varepsilon^{ijk} \ +
+\]
+\[  \overline{q_L}^j \lambda_{S_3} \varepsilon \sigma_a {q^c_L}^k \varepsilon_{ijk} \ \overline{l_L} \beta_{S_3}^* \varepsilon \sigma_a {q^c_L}^i + \ \overline{q_L}^j \lambda_{S_3} \varepsilon \sigma_a {q^c_L}^k \varepsilon_{ijk} \overline{q_L^c}_l \lambda^*_{S_3} \varepsilon \sigma_a {q_L}_m \varepsilon^{ilm} \big] 
+\]
+And then, (see appendix)
+\[
+\overline{a^c} \varepsilon \sigma_a b \  \overline{c} \sigma^a \varepsilon  d^c= \frac{1}{4}\big[3 a^\dagger \overline{\sigma}^ \mu b \ c^\dagger \overline{\sigma}_\mu d \ + \ a^\dagger \overline{\sigma}^\mu  \sigma_a b \ c^\dagger \overline{\sigma}_\mu  \sigma^a d \big] \rightarrow
+\]
+\[
+\mathcal{L}_{EFT} \supset -G_{S_3} \big[ \frac{3}{4} \beta_{S_3}^* \beta_{S_3} \mathcal{O}_S + \frac{1}{4}\beta_{S_3}^* \beta_{S_3} \mathcal{O}_T + \ \overline{q_L^c}_i \beta_{S_3} \varepsilon \sigma_a l_L \ \overline{q_L^c}_j \lambda^*_{S_3} \varepsilon \sigma_a {q_L}_k \varepsilon^{ijk} \ +
+\]
+\[  \overline{q_L}^j \lambda_{S_3} \varepsilon \sigma_a {q^c_L}^k \varepsilon_{ijk} \ \overline{l_L} \beta_{S_3}^* \varepsilon \sigma_a {q^c_L}^i + \ \overline{q_L}^j \lambda_{S_3} \varepsilon \sigma_a {q^c_L}^k \varepsilon_{ijk} \overline{q_L^c}_l \lambda^*_{S_3} \varepsilon \sigma_a {q_L}_m \varepsilon^{ilm} \big] 
+\]
+Terms that give problems to $\Delta F=2$ and proton decay can be swtiched off setting the flavour matrix $\lambda_{S_3}=0$. Last term can be written in term of known $\mathcal{O}_{1-2}$ using $\varepsilon_{ijk} \varepsilon^{ilm} = \delta_j^l \delta_k^m -\delta_j^m \delta_k^l $.
+And in terms of Wilson's coefficients
+\[
+C_S = 3 C_T \equiv \frac{3}{4} G_{S_3} \beta_{S_3}^* \beta_{S_3}
+\]
+
+\subsection{$R_2 \sim (3,2)_{7/6}$}
+\[
+\mathcal{L}_{UV} \supset  (D_\mu R_2)^\dagger D^\mu R_2 + M^2_{R_2} R_2^\dagger R_2 +
+\]
+\[
+g_{R_2} R_2 \big[u_R^\dagger \beta_{R_2}^l l_L + q_L^\dagger \beta_{R_2}^q e_R \big]
+\]
+\[
+\frac{\delta \mathcal{L}_{UV}}{\delta R_2^\dagger}=0= M_{R_2}^2 R_2 + g_{R_2}\big[l_L^\dagger\beta_{R_2}^{l*} u_R  + e_R^\dagger\beta_{R_2}^{q*} q_L \big] \rightarrow
+\]
+\[
+R_2 = - \frac{g_{R_2}}{M^2_{R_2}} \big[l_L^\dagger \beta_{R_2}^{l*} u_R  + e_R^\dagger \beta_{R_2}^{q*} q_L \big]
+\]
+\[
+\mathcal{L}_{EFT} \supset -G_{R_2} \big[ u_R^\dagger\beta_{R_2}^l l_L \ l_L^\dagger \beta_{R_2}^{l*} u_R + u_R^\dagger \beta_{R_2}^l l_L \ e_R^\dagger \beta_{R_2}^{q*} q_L  + q_L^\dagger \beta_{R_2}^{q*} e_R \   l_L^\dagger \beta_{R_2}^{l*} u_R + q_L^\dagger \beta_{R_2}^q e_R \ e_R^\dagger \beta_{R_2}^{q*} q_L \big] +h.c
+\]
+Now, since  
+\[
+\delta_a^b \delta_c^d = \frac{1}{2} \sigma^\mu_{ac} \overline{\sigma_\mu}^{bc}
+\]
+\[
+\mathcal{L}_{EFT} \supset -\frac{G_{R_2}}{2} \big[ \beta_{R_2}^l  \beta_{R_2}^{l*} \mathcal{O}_{LR2}^u +  \beta_{R_2}^l \beta_{R_2}^{q*}  \mathcal{O}_{LQ}^u + \beta_{R_2}^{q}  \beta_{R_2}^{l*} \mathcal{O}_{LQ}^{u\dagger} +  \beta_{R_2}^q    \beta_{R_2}^{q*} \mathcal{O}_{LR1}^u  \big]
+ +h.c.
+\]
+\section{Processes}
+\[
+\mathcal{O}_S= q_L^\dagger \overline{\sigma}^\mu q_L \ l_L^\dagger \overline{\sigma}_\mu l_L \  \quad,\mathcal{O}_T=q_L^\dagger \overline{\sigma}^\mu  \sigma_a q_L \ l_L^\dagger \overline{\sigma}_\mu \sigma^a l_L
+\]
+\[
+\mathcal{O}^{u/d}_R = q_R^\dagger \sigma^\mu q_R \ e_R^\dagger \sigma_\mu e_R \quad, \mathcal{O}_{LQ}^{u/d}= q_L^\dagger \overline{\sigma}^\mu l_L \ e_R^\dagger \sigma_\mu q_R
+\]
+\[
+\mathcal{O}_{LR1}= q_L^\dagger \overline{\sigma}^\mu q_L \ e_R^\dagger \sigma_\mu e_R \quad, \mathcal{O}_{LR2}^{u/d}= q_R^\dagger \sigma^\mu q_R \ l_L^\dagger \overline{\sigma}_\mu l_L 
+\]
+
+\[
+\mathcal{L}_{EFT} \supset C_S \mathcal{O}_S + C_T \mathcal{O}_T + \sum_{q=u,d}\big[C_{R}^q \mathcal{O}_{R}^q + C_{LQ}^q \mathcal{O}_{LQ}^q + C_{LR1}^q \mathcal{O}_{LR1}^q + C_{LR2}^q \mathcal{O}_{LR2}^q \big]
+\]
+Where $C_i O_i \equiv C^{q_1 q_2 l_1 l_2}_i {O_i}_{q_1 q_2 l_1 l_2}$ and
+\[
+C_i^{q_1 q_2 l_1 l_2} \equiv c_i \Lambda_i^{q_1 q_2 l_1 l_2}
+\]
+in which $q_{1-2}=d,s,b$ and $l_{1-2}= e,\mu , \tau$.\\
+We will see in the different cases the SM contribute for those coefficients.\\
+
+Before to compute some semileptonic observable we just write down somw guidelines:
+\begin{itemize}
+\item Processes corcening neutrinos get contribute from $\mathcal{O}_{LR1}, \mathcal{O}_R$.
+\item The non flavour diagonal contributes are suppresed in SM for what concern $O_T$ and more suppressed for $\mathcal{O}_S, \mathcal{O}_{LR1-2} $
+\item In SM $C_R= C_{LQ} \simeq 0$
+\item NP in which we are interested in doesn't concern lightest families of quark and lepton.
+\end{itemize}
+
+
+\subsection{$R_{K^*}$}
+\[
+R_{K^*} \equiv \frac{\mathcal{B}(B \rightarrow K^* \mu \mu)}{\mathcal{B}(B \rightarrow K^* e e )}
+\]
+We know that in SM, because of LFU, $R_{K^*}=1$. Both those processes are FCNC and the intensity is given by $C_{SM} \equiv V_{ts}^* V_{tb} \frac{e^2}{4 \pi v^2} \mathcal{F}_{loop}(y_t)$.
+
+Keeping all the contributes:
+\[
+R_{K^*} =|1+ \frac{1}{C_{SM}}  \sum_{i=all} C_i^{bs \mu \mu}  |^2
+\]
+
+\subsection{$R_{D^*}$}
+\[
+R_{D^*} \equiv \frac{\mathcal{B}(B \rightarrow D^* \tau  \overline{\nu})}{\frac{1}{2} \big[ \mathcal{B}(B \rightarrow D^* e \overline{\nu} ) + \mathcal{B}(B \rightarrow D^* \mu \overline{\nu} )  \big] }
+\]
+since this time i have different contributes i define $C_{D^*}^{b c  l_1 l_2} \equiv  \sum_d 2 V^*_{cd}C_T ^{c d  l_1 l_2} + {C^d_{LQ}}^{bs l_1 l_2} $.
+\[
+R_{D^*} = \frac{|1 +  \frac{1}{C_{SM}}\big[C_{D^*}^{bc \tau \tau }+ C_{D^*}^{bc \tau \mu } \big] |^2}{ \frac{1}{2} \big\{ 1 + |1 + \frac{1}{C_{SM}} \big[ C_{D^*}^{bc \mu \mu} + C_{D^*}^{bc \mu \tau} \big]^2 | \big\} }
+\]
+where in this case $C_{SM}= \frac{V_{cb}}{v^2}$
+
+\subsection{$R_{B\rightarrow K \nu \nu}$}
+\[
+R_{B\rightarrow K \nu \nu} \equiv \frac{\mathcal{B}(B\rightarrow K \nu \nu)}{\mathcal{B}(B\rightarrow K \nu \nu)_{SM}}
+\]
+Again the $C_{SM} \equiv V_{ts}^* V_{tb} \frac{1}{cos^2 \theta_W \ v^2} \mathcal{F}_{loop}(y_t)$.\\
+Meanwhile $C_{\nu \nu}^{bs l_1 l_2} \equiv C_S^{bsl_1 l_2} - C_T^{bsl_1 l_2} + {C_{LR2}^d}^{bsl_1 l_2}$
+
+\[
+R_{B\rightarrow K \nu \nu} =  |1+ \frac{\sum_{l_1, l_2 = \mu , \tau} C_{\nu \nu}^{bsl_1 l_2}}{C_{SM}}|^2
+\]
+
+\subsection{$\mathcal{B}(B \rightarrow K \mu \tau)$}
+\subsection{$\mathcal{B}(\tau \rightarrow \mu \phi)$}
+
+
+
+
+\section{Appendix}
+\subsection{Fierz identities and useful Lorentz group relations}
+\[
+\sigma_{\alpha \dot{\alpha}}^\mu \overline{\sigma_\mu}^{\beta \dot{\beta}}= 2\delta^\beta_\alpha \delta^{\dot{\beta}}_{\dot{\alpha}}
+\]
+\[
+\sigma_{\alpha \dot{\alpha}}^\mu {\sigma_{\mu}}_{\beta \dot{\beta}}= 2 \varepsilon_{\alpha \beta} \varepsilon_{\dot{\alpha} \dot{\beta}} 
+\]
+\[
+\overline{\sigma}_\mu^{\alpha \dot{\alpha}} {\overline{\sigma}^{\mu}}^{\beta \dot{\beta}}= 2 \varepsilon^{\alpha \beta} \varepsilon^{\dot{\alpha} \dot{\beta}} 
+\]
+\[
+\varepsilon_{\alpha \beta} \varepsilon^{\gamma \delta} = \delta_\alpha^\gamma \delta_\beta^\delta - \delta_\beta^\gamma \delta_\alpha^\delta
+\]
+\subsection{Fierzing in scalar lagrangian}
+Doppio problema con la coniugazione complessa: 1- ignorata nei fermioni , 2 ignorata su una delle $\overline{\sigma}_\mu$, $\sigma_a$! \emph{non è che in qualche modo si compensa?} \\
+Here the case in which we need to switch the position of the spinors from 1234 to 1432.
+indicating with $i,j,k,l$ the Lorentz indeces and with $a,b,c,d$ the EW indeces: 
+\[
+\overline{a^c} \varepsilon b \  \overline{c} \varepsilon d^c = a_{ia} b_{jb} c_{kc} d_{ld} \varepsilon^{ab} \varepsilon^{cd} \varepsilon^{ij} \varepsilon^{kl}
+\]
+where the Lorent's $\varepsilon$ comes from the charge's coniugation.\\
+Now for what concern the Lorentz's structure
+\[
+\varepsilon^{ij} \varepsilon^{kl} = - \varepsilon^{ji} \varepsilon^{kl} = -\frac{1}{2} \overline{\sigma}^\mu_{jk} \overline{\sigma}_{\mu il} 
+\]
+Instead for what concern $EW$ group in the singlet case, since 
+\[
+\sigma_a^{ab} {\sigma^a}^{cd} =2 \delta^{ad} \delta^{bc} - \delta^{ab} \delta^{cd} \rightarrow
+\]
+\[
+\varepsilon^{ab} \varepsilon^{cd} = \delta^{ac} \delta^{bd} - \delta^{ad} \delta^{bc} = \frac{1}{2} \sigma^{ad}_a {\sigma^{bc}}^a - \frac{1}{2}\delta^{ad}\delta^{bc}
+\]
+So 
+\[
+\overline{a^c} \varepsilon b \  \overline{c} \varepsilon d^c =\frac{1}{4}\big[ a^\dagger \overline{\sigma}^ \mu b \ c^\dagger \overline{\sigma}_\mu d \ - \ a^\dagger \overline{\sigma}^\mu  \sigma_a b \ c^\dagger \overline{\sigma}_\mu  \sigma^a d \big] 
+\]
+and in the triplet case we obtain
+\[
+\overline{a^c} \varepsilon \sigma_a b \  \overline{c} \sigma^a \varepsilon  d^c = a_{ia} b_{jb} c_{kc} d_{ld} \ \varepsilon^{ij} \varepsilon{kl} \ \varepsilon^{ae} \varepsilon^{fd} \sigma^{eb}_a {\sigma^{}}^a 
+\]
+\[
+\varepsilon^{ae} \varepsilon^{fd} \sigma^{eb}_a {\sigma^{ce}}^a =(\delta^{af}\delta^{ed} - \delta^{ad}\delta^{fe})(2\delta^{e}\delta^{kj} - \delta^{mj}\delta^{kn})=
+\]
+\[
+2\delta^{ad}\delta^{bc} -4\delta^{ad}\delta^{bc} + \delta^{ad}\delta^{bc} -\delta^{ac}\delta^{bd}= -(\delta^{ad}\delta^{bc}+\delta^{ac}\delta^{bd})
+\]
+then
+\[
+\sigma^a_{ad}{\sigma_{bc}}_a= 2\delta^{ac}\delta^{bd}-\delta^{ad}\delta^{bc}\rightarrow
+\]
+\[
+\varepsilon^{ae} \varepsilon^{fd} \sigma^{eb}_a {\sigma^{ce}}^a =-\frac{1}{2}(\sigma_a^{ad}{\sigma^{bc}}^a + 3 \delta^{ad}\delta^{bc})
+\]
+so
+\[
+\overline{a^c} \varepsilon \sigma_a b \  \overline{c} \sigma^a \varepsilon  d^c= \frac{1}{4}\big[3 a^\dagger \overline{\sigma}^ \mu b \ c^\dagger \overline{\sigma}_\mu d \ + \ a^\dagger \overline{\sigma}^\mu  \sigma_a b \ c^\dagger \overline{\sigma}_\mu  \sigma^a d \big] 
+\]
+\subsection{From EW eigenstates to electric charge eigenstates}
+\[
+\sigma_\pm = \frac{\sigma_1 \pm i \sigma_2}{2} \rightarrow \sigma_1 = \sigma_+ + \sigma_- \quad , \sigma_2 = i(\sigma_- - \sigma_+ ) 
+\]
+\[
+{\sigma_a}_{ij} {\sigma^a}_{kl} = {\sigma_1}_{ij} {\sigma_1}_{kl} +{\sigma_2}_{ij} {\sigma_2}_{kl} + {\sigma_3}_{ij} {\sigma_3}_{kl} =
+\]
+\[
+({\sigma_+}_{ij} + {\sigma_-}_{ij}) ({\sigma_+}_{kl} + {\sigma_-}_{kl}) -({\sigma_-}_{ij} - {\sigma_+}_{ij}) ({\sigma_-}_{kl}- {\sigma_+}_{kl}) + {\sigma_3}_{ij} {\sigma_3}_{kl}=
+\]
+\[
+2{\sigma_+}_{ij} {\sigma_-}_{kl} + 2 {\sigma_+}_{ij} {\sigma_-}_{kl} + {\sigma_3}_{ij} {\sigma_3}_{kl}
+\]
+So, in term of charge's eigenstates:
+\[
+\mathcal{O}_T=q_L^\dagger \overline{\sigma}^\mu  \sigma_a q_L \ l_L^\dagger \overline{\sigma}_\mu \sigma^a l_L= 2 (V^* u_L)^\dagger \overline{\sigma}^\mu   d_L \ l_L^\dagger \overline{\sigma}_\mu \nu_L
+ \ + \ 2 d_L^\dagger \overline{\sigma}^\mu  (V^* u_L) \ \nu_L^\dagger \overline{\sigma}_\mu  l_L
+\ + 
+ \]
+ \[
+ (V^* u_L)^\dagger \overline{\sigma}^\mu  (V^* u_L) \ \nu_L^\dagger \overline{\sigma}_\mu  \nu_L \ + \ d_L^\dagger \overline{\sigma}^\mu  d_L \ l_L^\dagger \overline{\sigma}_\mu  l_L \  - \ d_L^\dagger \overline{\sigma}^\mu   d_L \ \nu_L^\dagger \overline{\sigma}_\mu  \nu_L \ - \ (V^* u_L)^\dagger \overline{\sigma}^\mu (V^* u)_L \ l_L^\dagger \overline{\sigma}_\mu  l_L
+ \] 
+\end{document}
+
