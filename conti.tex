@@ -1,5 +1,5 @@
 \documentclass{article}
-
+\usepackage{braket}
 
 \begin{document}
 \section{PLAN}
@@ -16,12 +16,17 @@ Set of relevant 2q2l operators hopefully complete:
 \mathcal{O}_S= q_L^\dagger \overline{\sigma}^\mu q_L \ l_L^\dagger \overline{\sigma}_\mu l_L \  \quad,\mathcal{O}_T=q_L^\dagger \overline{\sigma}^\mu  \sigma_a q_L \ l_L^\dagger \overline{\sigma}_\mu \sigma^a l_L
 \]
 \[ % Non SM operators
-\mathcal{O}^{u/d}_R = q_R^\dagger \sigma^\mu q_R \ e_R^\dagger \sigma_\mu e_R \quad, \mathcal{O}_{LQ}^{u/d}= q_L^\dagger \overline{\sigma}^\mu l_L \ e_R^\dagger \sigma_\mu q_R
+\mathcal{O}^{u/d}_R = q_R^\dagger \sigma^\mu q_R \ e_R^\dagger \sigma_\mu e_R 
 \]
 \[ % LR operators 
 \mathcal{O}_{LR1}= q_L^\dagger \overline{\sigma}^\mu q_L \ e_R^\dagger \sigma_\mu e_R \quad, \mathcal{O}_{LR2}^{u/d}= q_R^\dagger \sigma^\mu q_R \ l_L^\dagger \overline{\sigma}_\mu l_L 
 \]
-
+\[
+\mathcal{O}^u_S = q_L^\dagger u_R \ \varepsilon \ l_L^\dagger e_R \quad, \mathcal{O}^d_{S}= q_L^\dagger d_R \ \varepsilon \ e_R^\dagger l_L 
+\]
+\[
+\mathcal{O}_T^d = l_L^\dagger \sigma_{\mu \nu} e_R  \ d_R^\dagger \sigma^{\mu \nu} q_L \quad, \mathcal{O}_T^u = l_L^\dagger \sigma_{\mu \nu} e_R  \ q_L^\dagger \sigma^{\mu \nu} u_R
+\]
 \subsection{$\mathcal{L}_{EFT}$ proton decay}
 I wouldn't concern too much about proton decay because it would be anyway flavour suppressed but the relevant operators are : $ d_R^\dagger u_R^c \ u_R^\dagger e_R^c \quad  d_R^\dagger u_R^c \ q_L^\dagger l_L^c $ $ d_R^\dagger d_R^c \ d_R^\dagger e_R $
 \subsection{$\mathcal{L}_{EFT} \ \Delta F = 2$ }
@@ -86,7 +91,7 @@ C_S\equiv  2 G_{B'} \lambda_{B'}^q \lambda_{B'}^l \quad C_T \equiv 2G_{W'} \lamb
 
 \subsection{$U_1 \sim (3,1)_{2/3}$}
 \[
-\mathcal{L}_{UV} \supset -\frac{1}{2} U_{1\mu \nu}^\dagger U^{\mu \nu}_1 \ + \ M_{U_1}^2 U_{1\mu}U_1^\mu  \ +
+\mathcal{L}_{UV} \supset -\frac{1}{2} U_{1\mu \nu}^\dagger U^{\mu \nu}_1 \ + \ M_{U_1}^2 U^\dagger_{1\mu}U_1^\mu  \ +
 g_U U_{1\mu} \big[ q_L^\dagger \beta^L_{U_1} \overline{\sigma}^\mu l_L \ +  \ d_R^\dagger \beta^R_{U_1} \sigma^\mu e_R \big] \ + \ h.c. 
 \]
 % fine lagrangiana
@@ -107,11 +112,11 @@ Plus for what concern the $SU(2)_L$ structure we have to fix just the first term
 \]
 
 \[
-\mathcal{L}_{EFT} \supset G_{U_1}\big[\frac{\beta_{U_1}^L \beta_{U_1}^{*L}}{2}(\mathcal{O}_{S} + \mathcal{O}_{T}) + \beta_{U_1}^R \beta_{U_1}^{*R} \mathcal{O}^d_{R} - 2 \beta_{U_1}^R \beta_{U_1}^{*L} \mathcal{O}^d_{LQ} + h.c.]
+\mathcal{L}_{EFT} \supset G_{U_1}\big[\frac{\beta_{U_1}^L \beta_{U_1}^{*L}}{2}(\mathcal{O}_{S} + \mathcal{O}_{T}) + \beta_{U_1}^R \beta_{U_1}^{*R} \mathcal{O}^d_{R} - 4 \beta_{U_1}^R \beta_{U_1}^{*L} \mathcal{O}_{S1} + h.c.]
 \]
-Generaing so:
+Generating so:
 \[
-C_S = C_T \equiv \frac{G_{U_1}}{2} \beta_{U_1}^{L*} \beta_{U_1}^L \quad  C_R^d \equiv G_{U_1} \beta_{U_1}^{R*} \beta_{U_1}^R  \quad C_{LQ} \equiv G_{U_1} \beta_{U_1}^{R*} \beta_{U_1}^L 
+C_S = C_T \equiv \frac{G_{U_1}}{2} \beta_{U_1}^{L*} \beta_{U_1}^L \quad  C_R^d \equiv G_{U_1} \beta_{U_1}^{R*} \beta_{U_1}^R  \quad C_{S2} \equiv - 4 G_{U_1} \beta_{U_1}^{R*} \beta_{U_1}^L 
 \]
 and nothing else!!!
 \subsection{$U_3 \sim (3,3)_{2/3}$}
@@ -144,22 +149,32 @@ C_S = -3 C_T \equiv \frac{3 G_{U_3}}{2 M^2_{U_3}} \beta_{U_3} \beta_{U_3}^*
 \mathcal{L}_{UV} \supset (D_\mu S_1)^\dagger D^\mu S_1 + M^2 S_1^\dagger S_1 +
 \]
 \[
-+g_{S_1} S_1^i \big[ \overline{q^c_{L i}} \beta_{S_1} \varepsilon l_L + \overline{q^j_L} \lambda_{S_1} \varepsilon {q^{c}_L}^k \varepsilon_{ijk} \big] +h.c.
++g_{S_1} S_1^i \big[ q^{\dagger c}_{L i} \beta^L_{S_1} \varepsilon l_L + u^{\dagger c}_{R i} \beta^R_{S_1}  e_R + \overline{q^j_L} \lambda_{S_1} \varepsilon {q^{c}_L}^k \varepsilon_{ijk} \big] +h.c.
 \]
 where $\varepsilon$ act on $SU(2)_L$ and $\varepsilon_{abc} $ on $SU(3)_c$.
 \[
-\frac{\delta \mathcal{L}_{UV}}{\delta S_1^{i \dagger}} =0= M^2_{S_1} S_{1a} + g_{S_1}\big[ \overline{l_L} \beta^*_{S_1} \varepsilon q^c_{L i} + \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}\big] \rightarrow
+\frac{\delta \mathcal{L}_{UV}}{\delta S_1^{i \dagger}} =0= M^2_{S_1} S_{1a} + g_{S_1}\big[ l_L^\dagger \varepsilon \beta^{L*}_{S_1}  q^c_{L i} + + e^\dagger_{R } \beta^{R*}_{S_1}  u^c_{R i} + {q^{\dagger c}_L}^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}\big] \rightarrow
 \]  
 \[
-S_{1i} = - \frac{g_{S_1}}{M^2_{S_1}} \big[ \overline{l_L} \beta^*_{S_1} \varepsilon q^c_{L i} + \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}\big] 
+S_{1i} = - \frac{g_{S_1}}{M^2_{S_1}} \big[ \overline{l_L} \beta^*_{S_1} \varepsilon q^c_{L i} +  e^\dagger_{R } \beta^{R*}_{S_1} u^c_{R i} + \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}\big] 
 \]
 
 \[
-\mathcal{L}_{EFT} \supset -G_{S_1} \big[  \overline{l_L} \beta^*_{S_1} \varepsilon {q^c}^i_{L} \ \overline{q^c_{L i}} \beta_{S_1} \varepsilon l_L \ + \  \overline{l_L} \beta^*_{S_1} \varepsilon {q^c}^i_{L} \ \overline{q^j_L} \lambda_{S_1} \varepsilon {q^{c}_L}^k \varepsilon_{ijk} \ + 
+\mathcal{L}_{EFT} \supset -G_{S_1} \big[ \overline{l_L} \beta^*_{S_1} \varepsilon q^c_{L i} +  e^\dagger_{R} \beta^{R*}_{S_1} \varepsilon u^c_{R i} + \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}\big] \big[ q^{\dagger c}_{L i} \beta^L_{S_1} \varepsilon l_L + u^{\dagger c}_{R i} \beta^R_{S_1}  e_R + \overline{q^j_L} \lambda_{S_1} \varepsilon {q^{c}_L}^k \varepsilon_{ijk} \big]
+\]
+
+\[
+\mathcal{L}_{EFT} \supset -G_{S_1} \big[ l^\dagger_L \beta^{L*}_{S_1} \varepsilon q^c_{L i} \ q^{\dagger c}_{L i} \beta^L_{S_1} \varepsilon l_L + 
+e^\dagger_{R} \beta^{R*}_{S_1} u^c_{R i} \ q^{\dagger c}_{L i} \beta^L_{S_1} \varepsilon l_L + 
+q^{c\dagger j}_L \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk} \ \overline{q^l_L} \lambda_{S_1} \varepsilon {q^{c}_L}^m \varepsilon^{ilm} + 
 \]
 \[
-\overline{q^c_L}^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}  \overline{q^c}^i_{L} \beta_{S_1} \varepsilon l_L \ + \ \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk}  \overline{q^l_L} \lambda_{S_1} \varepsilon {q^c_L}_m \varepsilon^{ilm} \big]
+ l^\dagger_L \beta^{L*}_{S_1} \varepsilon q^c_{L i} \ u^{\dagger c}_{R i} \beta^R_{S_1}  e_R +
+e^\dagger_{R } \beta^{R*}_{S_1} u^c_{R i} \ u^{\dagger c}_{R i} \beta^R_{S_1}  e_R+ (BNV \ terms) 
+\big] 
 \]
+
+
 Then, (see appendix)
 \[
 \overline{a^c} \varepsilon b \  \overline{c} \varepsilon d^c =\frac{1}{4}\big[ a^\dagger \overline{\sigma}^ \mu b \ c^\dagger \overline{\sigma}_\mu d \ - \ a^\dagger \overline{\sigma}^\mu  \sigma_a b \ c^\dagger \overline{\sigma}_\mu  \sigma^a d \big] \rightarrow
@@ -169,7 +184,7 @@ Then, (see appendix)
 \mathcal{L}_{EFT} \supset -G_{S_1} \big[ \frac{1}{4} \beta_{S_1} \beta_{S_1}^* \mathcal{O_S} - \frac{1}{4} \beta_{S_1} \beta_{S_1}^* \mathcal{O}_T + \  \overline{l_L} \beta^*_{S_1} \varepsilon {q^c}^i_{L} \ \overline{q^j_L} \lambda_{S_1} \varepsilon {q^{c}_L}^k \varepsilon_{ijk} \ + 
 \]
 \[
-\overline{q^c_L}^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk} \  \overline{q^c}^i_{L} \beta_{S_1} \varepsilon l_L \ + \ \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk} \ \overline{q_L}_l \lambda_{S_1} \varepsilon {q^c_L}_m \varepsilon^{ilm} \big]
++ \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk} \ \overline{q_L}_l \lambda_{S_1} \varepsilon {q^c_L}_m \varepsilon^{ilm} \big]
 \]
 Terms that give problems to $\Delta F=2$ and proton decay can be swtiched off setting the flavour matrix $\lambda_{S_1}=0$. Last term can be written in term of known $\mathcal{O}_{1-2}$ using $\varepsilon_{ijk} \varepsilon^{ilm} = \delta_j^l \delta_k^m -\delta_j^m \delta_k^l $.
 In terms of Wilson's semileptonic coefficients:
@@ -279,11 +294,36 @@ R_{K^*} =|1+ \frac{1}{C_{SM}}  \sum_{i=all} C_i^{bs \mu \mu}  |^2
 \[
 R_{D^*} \equiv \frac{\mathcal{B}(B \rightarrow D^* \tau  \overline{\nu})}{\frac{1}{2} \big[ \mathcal{B}(B \rightarrow D^* e \overline{\nu} ) + \mathcal{B}(B \rightarrow D^* \mu \overline{\nu} )  \big] }
 \]
-since this time i have different contributes i define $C_{D^*}^{b c  l_1 l_2} \equiv  \sum_d 2 V^*_{cd}C_T ^{c d  l_1 l_2} + {C^d_{LQ}}^{bs l_1 l_2} $.
+now, since
 \[
-R_{D^*} = \frac{|1 +  \frac{1}{C_{SM}}\big[C_{D^*}^{bc \tau \tau }+ C_{D^*}^{bc \tau \mu } \big] |^2}{ \frac{1}{2} \big\{ 1 + |1 + \frac{1}{C_{SM}} \big[ C_{D^*}^{bc \mu \mu} + C_{D^*}^{bc \mu \tau} \big]^2 | \big\} }
+|\mathcal{A}(b \rightarrow c \tau \overline{\nu})|^2= \sum_{l=\mu, \tau} \big[|\mathcal{A}(b_L \rightarrow \tau_L c_L \overline{\nu_l}_L)|^2 + |\mathcal{A}(b_L \rightarrow \tau_R c_R \overline{\nu_l}_L)|^2 + 
 \]
-where in this case $C_{SM}= \frac{V_{cb}}{v^2}$
+\[
+|\mathcal{A}(b_R \rightarrow \tau_R c_L \overline{\nu_l}_L)|^2 + |\mathcal{A}(b_R \rightarrow \tau_L c_R \overline{\nu_l}_L)|^2  \big]=
+\]
+\[
+|C_{SM} + 2V^*_{ts} C_T^{bs\tau\tau}|^2 + |2V^*_{ts} C_T^{bs\mu\tau}|^2 
++ \sum_{l=\mu, \tau} \big[| C^{bsl\tau}_{S1}|^2 +  |C^{bsl\tau}_{S2}|^2 + |C^{bsl\tau}_{T1}|^2 + |C^{bsl\tau}_{T2}|^2\big]
+\]
+The muon channel is analogous:
+\[
+|\mathcal{A}(b\rightarrow c \mu \overline{\nu} )|^2 = 
+|C_{SM} + 2V^*_{ts}C_T^{bs\mu\mu}|^2 + |2V^*_{ts}C_T^{bs\tau\mu}|^2 
++ \sum_{l=\mu, \tau} \big[| C^{bsl\mu}_{Scal}|^2 +  |C^{bsl\mu}_{LQ}|^2\big]
+\]
+Meanwhile
+\[
+|\mathcal{A}(b\rightarrow c e \overline{\nu} )|^2 = |C_{SM}|^2 
+\]
+Now since $\bra{B} b_L^\dagger c_R\ket{D^*}=\bra{B} b_R^\dagger c_L\ket{D^*}=0$
+\[
+R_{D^*}=\frac{|C_{SM} + 2V^*_{ts} C_T^{bs\tau\tau}|^2 + |2V^*_{ts} C_T^{bs\mu\tau}|^2 }{\frac{1}{2}\big[ |C_{SM}|^2 +|C_{SM} + 2V^*_{ts}C_T^{bs\mu\mu}|^2 + |2V^*_{ts}C_T^{bs\tau\mu}|^2\big]}
+\]
+With $C_{SM}= \frac{2V_{cb}}{v^2}$. Remember that $R_{D^*}$ tests LFU but it's not equal to 1, in fact ${R_{D^*}}_{SM} = \Phi_\tau$ if we set $\Phi_e=\Phi_\mu=1$.\\
+\[
+R_{D}= \frac{•}{•}
+\]
+
 
 \subsection{$R_{B\rightarrow K \nu \nu}$}
 \[
@@ -378,8 +418,8 @@ So, in term of charge's eigenstates:
 \mathcal{O}_T=q_L^\dagger \overline{\sigma}^\mu  \sigma_a q_L \ l_L^\dagger \overline{\sigma}_\mu \sigma^a l_L= 2 (V^* u_L)^\dagger \overline{\sigma}^\mu   d_L \ l_L^\dagger \overline{\sigma}_\mu \nu_L
  \ + \ 2 d_L^\dagger \overline{\sigma}^\mu  (V^* u_L) \ \nu_L^\dagger \overline{\sigma}_\mu  l_L
 \ + 
- \]
- \[
+\]
+\[
  (V^* u_L)^\dagger \overline{\sigma}^\mu  (V^* u_L) \ \nu_L^\dagger \overline{\sigma}_\mu  \nu_L \ + \ d_L^\dagger \overline{\sigma}^\mu  d_L \ l_L^\dagger \overline{\sigma}_\mu  l_L \  - \ d_L^\dagger \overline{\sigma}^\mu   d_L \ \nu_L^\dagger \overline{\sigma}_\mu  \nu_L \ - \ (V^* u_L)^\dagger \overline{\sigma}^\mu (V^* u)_L \ l_L^\dagger \overline{\sigma}_\mu  l_L
  \] 
 \end{document}
