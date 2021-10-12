@@ -15,18 +15,18 @@ Set of relevant 2q2l operators hopefully complete:
 \[ % LH operators
 \mathcal{O}_S= q_L^\dagger \overline{\sigma}^\mu q_L \ l_L^\dagger \overline{\sigma}_\mu l_L \  \quad,\mathcal{O}_T=q_L^\dagger \overline{\sigma}^\mu  \sigma_a q_L \ l_L^\dagger \overline{\sigma}_\mu \sigma^a l_L
 \]
-\[ % Non SM operators
-\mathcal{O}^{u/d}_R = q_R^\dagger \sigma^\mu q_R \ e_R^\dagger \sigma_\mu e_R 
-\]
 \[ % LR operators 
 \mathcal{O}_{LR1}= q_L^\dagger \overline{\sigma}^\mu q_L \ e_R^\dagger \sigma_\mu e_R \quad, \mathcal{O}_{LR2}^{u/d}= q_R^\dagger \sigma^\mu q_R \ l_L^\dagger \overline{\sigma}_\mu l_L 
+\]
+\[ % Non SM operators
+\mathcal{O}^{u/d}_R = q_R^\dagger \sigma^\mu q_R \ e_R^\dagger \sigma_\mu e_R \quad, \mathcal{O}_{LQ} = e_R^\dagger q_L \ \varepsilon \ u_R^\dagger l_L 
 \]
 \[
 \mathcal{O}^u_S = q_L^\dagger u_R \ \varepsilon \ l_L^\dagger e_R \quad, \mathcal{O}^d_{S}= q_L^\dagger d_R \ \varepsilon \ e_R^\dagger l_L 
 \]
-\[
-\mathcal{O}_T^d = l_L^\dagger \sigma_{\mu \nu} e_R  \ d_R^\dagger \sigma^{\mu \nu} q_L \quad, \mathcal{O}_T^u = l_L^\dagger \sigma_{\mu \nu} e_R  \ q_L^\dagger \sigma^{\mu \nu} u_R
-\]
+%\[
+%\mathcal{O}_T^d = l_L^\dagger \sigma_{\mu \nu} e_R  \ d_R^\dagger \sigma^{\mu \nu} q_L \quad, \mathcal{O}_T^u = l_L^\dagger \sigma_{\mu \nu} e_R  \ q_L^\dagger \sigma^{\mu \nu} u_R
+%\]
 \subsection{$\mathcal{L}_{EFT}$ proton decay}
 I wouldn't concern too much about proton decay because it would be anyway flavour suppressed but the relevant operators are : $ d_R^\dagger u_R^c \ u_R^\dagger e_R^c \quad  d_R^\dagger u_R^c \ q_L^\dagger l_L^c $ $ d_R^\dagger d_R^c \ d_R^\dagger e_R $
 \subsection{$\mathcal{L}_{EFT} \ \Delta F = 2$ }
@@ -177,19 +177,24 @@ e^\dagger_{R } \beta^{R*}_{S_1} u^c_{R i} \ u^{\dagger c}_{R i} \beta^R_{S_1}  e
 
 Then, (see appendix)
 \[
-\overline{a^c} \varepsilon b \  \overline{c} \varepsilon d^c =\frac{1}{4}\big[ a^\dagger \overline{\sigma}^ \mu b \ c^\dagger \overline{\sigma}_\mu d \ - \ a^\dagger \overline{\sigma}^\mu  \sigma_a b \ c^\dagger \overline{\sigma}_\mu  \sigma^a d \big] \rightarrow
-\]
-
-\[
-\mathcal{L}_{EFT} \supset -G_{S_1} \big[ \frac{1}{4} \beta_{S_1} \beta_{S_1}^* \mathcal{O_S} - \frac{1}{4} \beta_{S_1} \beta_{S_1}^* \mathcal{O}_T + \  \overline{l_L} \beta^*_{S_1} \varepsilon {q^c}^i_{L} \ \overline{q^j_L} \lambda_{S_1} \varepsilon {q^{c}_L}^k \varepsilon_{ijk} \ + 
+\overline{a^c} \varepsilon b \  \overline{c} \varepsilon d^c =\frac{1}{4}\big[ a^\dagger \overline{\sigma}^ \mu b \ c^\dagger \overline{\sigma}_\mu d \ - \ a^\dagger \overline{\sigma}^\mu  \sigma_a b \ c^\dagger \overline{\sigma}_\mu  \sigma^a d \big] 
 \]
 \[
-+ \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk} \ \overline{q_L}_l \lambda_{S_1} \varepsilon {q^c_L}_m \varepsilon^{ilm} \big]
+\varepsilon_{ij} \varepsilon_{kl}= \delta_{ik} \delta_{jl} - \delta_{il} \delta_{jk}
+\]
+\[
+\varepsilon_{ij} \varepsilon_{kl}= - \frac{1}{2} \sigma^\mu_{il} \sigma_{\mu jk}
+\]
+\[
+\mathcal{L}_{EFT} \supset -G_{S_1} \big[ \frac{1}{4} \beta^L_{S_1} \beta_{S_1}^{L*} \mathcal{O_S} - \frac{1}{4} \beta^L_{S_1} \beta_{S_1}^{L*} \mathcal{O}_T +  2\beta^{R*}_{S_1} \beta^L_{S_1} \mathcal{O}_{LQ} - 2\beta^{R*}_{S_1} \beta^L_{S_1} \mathcal{O}_{S}^{u \dagger}   - \frac{1}{2} \beta^{R*}_{S_1} \beta^R_{S_1} \mathcal{O_R} 
+\]
+\[
++ \overline{q^c}_L^j \lambda_{S_1}^* \varepsilon q^k_L \varepsilon_{ijk} \ \overline{q_L}_l \lambda_{S_1} \varepsilon {q^c_L}_m \varepsilon^{ilm} + (BNV terms) \big] +h.c.
 \]
 Terms that give problems to $\Delta F=2$ and proton decay can be swtiched off setting the flavour matrix $\lambda_{S_1}=0$. Last term can be written in term of known $\mathcal{O}_{1-2}$ using $\varepsilon_{ijk} \varepsilon^{ilm} = \delta_j^l \delta_k^m -\delta_j^m \delta_k^l $.
 In terms of Wilson's semileptonic coefficients:
 \[
-C_S = - C_T \equiv - G_{S_1} \beta^*_{S_1} \beta_{S_1} 
+C_S = - C_T \equiv - \frac{G_{S_1}}{4}\beta^*_{S_1} \beta_{S_1} \quad, C_{LQ}=-C_S^{u*}= 2G_{S_1} \beta^{R*}_{S_1} \beta^L_{S1} \quad, C_R = G_{S1} = - \frac{1}{2} G_{S_1} \beta_{S_1}^{R*} \beta^R_{S1} 
 \]
 \subsection{$S_3 \sim (3^*, 3)_{1/3}$}
 \[
